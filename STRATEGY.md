@@ -1,5 +1,3 @@
-# xdeep-sentiment-analysis
-
 # Analýza sentimentu textu pomocí hlubokých neuronových sítí
 
 ## 1. Analýza problému
@@ -40,53 +38,3 @@ Architektura modelu zahrnuje:
 - plně propojenou (Dense) výstupní vrstvu s binární klasifikací.
 
 Model je navržen tak, aby zachycoval kontext slov v textu a byl schopen rozlišit sentiment i u krátkých a neformálních textů, typických pro sociální sítě.
-
----
-
-## 4. Realizace řešení a experimentování
-
-Implementace je provedena v jazyce Python v prostředí **Jupyter Notebook** pomocí platformy **Google Colab**. Pro realizaci jsou použity knihovny:
-
-- TensorFlow / Keras,
-- NumPy,
-- Pandas,
-- scikit-learn.
-
-Dataset je rozdělen na trénovací, validační a testovací část. Během experimentování jsou upravovány vybrané hyperparametry, zejména:
-
-- velikost embeddingu,
-- počet neuronů v LSTM vrstvě,
-- velikost batch size,
-- počet epoch.
-
-Cílem experimentů je sledovat vliv těchto parametrů na přesnost a stabilitu modelu.
-
----
-
-## 5. Evaluace řešení
-
-Vyhodnocení modelu je provedeno na testovací množině dat, která nebyla použita během trénování.
-
-Použité metriky zahrnují:
-
-- přesnost (accuracy),
-- matici záměn (confusion matrix),
-- případně hodnoty precision a recall.
-
-Kromě numerického hodnocení jsou analyzovány i konkrétní příklady správných a chybných klasifikací, aby bylo možné lépe porozumět chování modelu.
-
----
-
-## 6. Závěry
-
-V rámci projektu se podařilo vytvořit funkční model pro analýzu sentimentu textu, který dosahuje rozumných výsledků na testovacích datech. Projekt demonstruje základní principy práce s textovými daty a hlubokými neuronovými sítěmi.
-
-Výsledky ukazují, že i relativně jednoduchá architektura je schopna zachytit základní emocionální zabarvení textu. Mezi hlavní omezení patří zejména citlivost modelu na ironii, slang a nejednoznačné formulace.
-
-Do budoucna by bylo možné řešení rozšířit o:
-
-- použití předtrénovaných jazykových modelů,
-- aplikaci na český jazyk,
-- práci s vícetřídním sentimentem (pozitivní / neutrální / negativní).
-
-Projekt splnil stanovené cíle a posloužil jako praktický úvod do problematiky hlubokého učení v oblasti zpracování přirozeného jazyka.
